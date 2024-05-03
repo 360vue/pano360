@@ -306,7 +306,7 @@
  "partial": false,
  "adjacentPanoramas": [
   {
-   "backwardYaw": -109.26,
+   "backwardYaw": -106.25,
    "yaw": -165.93,
    "distance": 1,
    "class": "AdjacentPanorama",
@@ -601,7 +601,7 @@
  "adjacentPanoramas": [
   {
    "backwardYaw": -165.93,
-   "yaw": -109.26,
+   "yaw": -106.25,
    "distance": 1,
    "class": "AdjacentPanorama",
    "panorama": "this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A"
@@ -613,54 +613,13 @@
  "hfovMax": 130
 },
 {
- "items": [
-  {
-   "media": "this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600_camera"
-  },
-  {
-   "media": "this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A",
-   "end": "this.trigger('tourEnded')",
-   "class": "PanoramaPlayListItem",
-   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
-   "player": "this.MainViewerPanoramaPlayer",
-   "camera": "this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A_camera"
-  }
- ],
- "id": "mainPlayList",
- "class": "PlayList"
-},
-{
- "displayPlaybackBar": true,
- "class": "PanoramaPlayer",
- "viewerArea": "this.MainViewer",
- "gyroscopeVerticalDraggingEnabled": true,
- "id": "MainViewerPanoramaPlayer",
- "touchControlMode": "drag_rotation",
- "mouseControlMode": "drag_rotation"
-},
-{
- "initialPosition": {
-  "yaw": 70.74,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "class": "PanoramaCamera",
- "id": "camera_29F3BAAB_3FBE_BB52_41C3_B681D7CF9973",
- "initialSequence": "this.sequence_29F3AAAB_3FBE_BB52_4189_43B945DA5E06",
- "automaticZoomSpeed": 10
-},
-{
  "initialPosition": {
   "yaw": 14.07,
   "class": "PanoramaCameraPosition",
   "pitch": 0
  },
  "class": "PanoramaCamera",
- "id": "camera_29E25A95_3FBE_BB76_4199_740397ED09D1",
+ "id": "camera_2BE7BF91_3FA2_594E_41C6_C9F28FAC8CF7",
  "initialSequence": {
   "restartMovementOnUserInteraction": false,
   "movements": [
@@ -688,15 +647,25 @@
  "automaticZoomSpeed": 10
 },
 {
- "initialPosition": {
-  "yaw": 0.25,
-  "class": "PanoramaCameraPosition",
-  "pitch": 0
- },
- "class": "PanoramaCamera",
- "id": "panorama_35A9F800_3F9E_474E_4195_4D854FE2C600_camera",
- "initialSequence": "this.sequence_2F209741_3FA2_C9CE_418E_8639DA92E631",
- "automaticZoomSpeed": 10
+ "items": [
+  {
+   "media": "this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 0, 1)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600_camera"
+  },
+  {
+   "media": "this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A",
+   "end": "this.trigger('tourEnded')",
+   "class": "PanoramaPlayListItem",
+   "begin": "this.setEndToItemIndex(this.mainPlayList, 1, 0)",
+   "player": "this.MainViewerPanoramaPlayer",
+   "camera": "this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A_camera"
+  }
+ ],
+ "id": "mainPlayList",
+ "class": "PlayList"
 },
 {
  "initialPosition": {
@@ -731,6 +700,37 @@
   "class": "PanoramaCameraSequence"
  },
  "automaticZoomSpeed": 10
+},
+{
+ "initialPosition": {
+  "yaw": 73.75,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "class": "PanoramaCamera",
+ "id": "camera_2BED8FA0_3FA2_594E_41B8_E9AD5B7E4234",
+ "initialSequence": "this.sequence_2BED9FA0_3FA2_594E_41C9_FDA869009599",
+ "automaticZoomSpeed": 10
+},
+{
+ "initialPosition": {
+  "yaw": 0.25,
+  "class": "PanoramaCameraPosition",
+  "pitch": 0
+ },
+ "class": "PanoramaCamera",
+ "id": "panorama_35A9F800_3F9E_474E_4195_4D854FE2C600_camera",
+ "initialSequence": "this.sequence_2F209741_3FA2_C9CE_418E_8639DA92E631",
+ "automaticZoomSpeed": 10
+},
+{
+ "displayPlaybackBar": true,
+ "class": "PanoramaPlayer",
+ "viewerArea": "this.MainViewer",
+ "gyroscopeVerticalDraggingEnabled": true,
+ "id": "MainViewerPanoramaPlayer",
+ "touchControlMode": "drag_rotation",
+ "mouseControlMode": "drag_rotation"
 },
 {
  "progressBarBorderSize": 0,
@@ -878,7 +878,7 @@
  "class": "HotspotPanoramaOverlay",
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600, this.camera_29F3BAAB_3FBE_BB52_41C3_B681D7CF9973); this.mainPlayList.set('selectedIndex', 0)",
+   "click": "this.startPanoramaWithCamera(this.panorama_35A9F800_3F9E_474E_4195_4D854FE2C600, this.camera_2BED8FA0_3FA2_594E_41B8_E9AD5B7E4234); this.mainPlayList.set('selectedIndex', 0)",
    "toolTip": "KITCHEN",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
@@ -916,16 +916,16 @@
     ],
     "class": "ImageResource"
    },
-   "yaw": -109.26,
-   "hfov": 26.51,
+   "yaw": -106.25,
+   "hfov": 14.1,
    "class": "HotspotPanoramaOverlayMap",
-   "pitch": -9.99
+   "pitch": -10.74
   }
  ],
  "class": "HotspotPanoramaOverlay",
  "areas": [
   {
-   "click": "this.startPanoramaWithCamera(this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A, this.camera_29E25A95_3FBE_BB76_4199_740397ED09D1); this.mainPlayList.set('selectedIndex', 1)",
+   "click": "this.startPanoramaWithCamera(this.panorama_35165381_3F9E_4951_41C0_9EF09143B45A, this.camera_2BE7BF91_3FA2_594E_41C6_C9F28FAC8CF7); this.mainPlayList.set('selectedIndex', 1)",
    "toolTip": "DINING&LIVINING",
    "class": "HotspotPanoramaOverlayArea",
    "mapColor": "#FF0000"
@@ -935,11 +935,11 @@
  "enabledInCardboard": true,
  "items": [
   {
-   "image": "this.AnimatedImageResource_2F13500D_3FAE_4756_41A3_B54CC58C50AE",
-   "pitch": -9.99,
-   "yaw": -109.26,
+   "image": "this.AnimatedImageResource_2B904878_3FA2_C7BE_41C6_1ABE704878AA",
+   "pitch": -10.74,
+   "yaw": -106.25,
    "class": "HotspotPanoramaOverlayImage",
-   "hfov": 26.51,
+   "hfov": 14.1,
    "distance": 100
   }
  ],
@@ -970,7 +970,7 @@
    "yawSpeed": 7.96
   }
  ],
- "id": "sequence_29F3AAAB_3FBE_BB52_4189_43B945DA5E06",
+ "id": "sequence_2BED9FA0_3FA2_594E_41C9_FDA869009599",
  "class": "PanoramaCameraSequence"
 },
 {
@@ -1027,7 +1027,7 @@
    "height": 420
   }
  ],
- "id": "AnimatedImageResource_2F13500D_3FAE_4756_41A3_B54CC58C50AE",
+ "id": "AnimatedImageResource_2B904878_3FA2_C7BE_41C6_1ABE704878AA",
  "rowCount": 6
 }],
  "backgroundPreloadEnabled": true,
